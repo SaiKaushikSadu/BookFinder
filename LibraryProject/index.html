@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+    body{
+        background: url("https://image.shutterstock.com/image-photo/blurred-bookshelf-many-old-books-260nw-1577682832.jpg")no-repeat center top/cover;
+        height: 500px;
+        animation: change 40s infinite;
+    }
+    
+    @keyframes change {
+        0% {
+        background-image: url("img6.jpg");
+        background-repeat: no-repeat;
+      }
+
+        25% {
+        background-image: url("img4.jpg");
+        background-repeat: no-repeat;
+      }
+
+      50%{
+        background-image: url("img2.jfif");
+        background-repeat: no-repeat;
+      }
+
+      75% {
+        background-image: url("img7.jfif");
+        background-repeat: no-repeat;
+      }
+
+      100% {
+        background-image: url("http://images.assetsdelivery.com/compings_v2/yellowj/yellowj0906/yellowj090600963.jpg");
+        background-repeat: no-repeat;
+      }
+    }
+    #logo{
+        position: absolute;
+        top:30px;
+        left:40px;
+        height: 70px;
+        
+    } 
+   
+    .login{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 26%;
+        right:27%;
+        align-items: center;
+        justify-content: center;
+        border: 6px solid rgb(252, 240, 225);
+        border-radius: 8px;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        height: 350px;
+        width: 600px;
+        padding-top: 0px;
+        
+    }
+    .heading{
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .info{
+        padding:8px 150px 8px 150px;
+        text-align: center;
+        margin: 3px;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 17px;
+        font-family: 'Balsamiq Sans', cursive;
+
+    }
+    .info:hover{
+        background-color:bisque;
+        color: black;
+        cursor: pointer;
+    }
+    .btn{
+        padding:8px 50px 8px 50px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: blanchedalmond;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 20px;
+
+    }
+    .btn:hover{
+        background-color: rgb(240, 191, 131);
+        color: black;
+        cursor: pointer;
+    }
+    .heading{
+        color: white;
+        margin-top:20px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+   /* header::before{
+        background: url("https://image.shutterstock.com/image-photo/blurred-bookshelf-many-old-books-260nw-1577682832.jpg")no-repeat center top/cover;
+        content:"";
+        position:absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.2;
+    }*/
+    .right{
+        position:absolute;
+        right:20px;
+        top:15px;
+    }
+    .right a{
+        color: aliceblue;
+        font-size: 25px;
+        font-family: 'Balsamiq Sans', cursive;
+        text-decoration: none;
+        padding: 4px;
+        margin: 4px;
+    }
+    .discrip:hover{
+        color:grey;
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://template68194.motopreview.com/mt-demo/68100/68194/mt-content/uploads/2018/07/mt-1519-logo.png">;
+        <div class="right">
+            <a href="description.html" class="discrip" >Description</a>
+        </div>
+    </header>
+    <section>
+        <div class="login">
+            <h1 class="heading"><b>Welcome To Tsec Library </b></h1>
+            <input type="text" class="info" placeholder="Enter your name ">
+            <input type="text" class="info" placeholder="Enter your branch ">
+            <input type="text" class="info" placeholder="Enter your lib id ">
+            <input type="password" class="info" placeholder="Enter password "> 
+            <button class="btn">Submit</button>        
+        </div>
+    </section>
+</body>
+</html>
